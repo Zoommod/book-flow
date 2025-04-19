@@ -8,5 +8,5 @@ public class LoanModel
     public string Borrower { get; set; }
     public string Supplier { get; set; }
     public string BorrowedBook { get; set; }
-    public DateTime LoanDate { get; set; } = DateTime.Now;
+    public DateTime LastUpdatedDate { get; set; } = DateTime.Now;
 }
