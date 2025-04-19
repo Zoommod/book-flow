@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qFyHELH80E4=",
+  "success": true,
+  "projectFilePath": "/home/Zoom/Documents/BookFlow/BookFlow.csproj",
+  "expectedPackageFiles": [
+    "/home/Zoom/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/home/Zoom/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.36/microsoft.netcore.app.host.linux-x64.6.0.36.nupkg.sha512"
+  ],
+  "logs": []
+}
