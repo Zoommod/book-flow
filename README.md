@@ -1,22 +1,22 @@
-# 📚 Sistema de Empréstimo de Livros
+# 📚 Book Loan System
 
-Projeto de **CRUD básico** desenvolvido com **ASP.NET Core MVC** e **.NET 6**, que simula um sistema de empréstimo de livros.
+A basic **CRUD** project built with **ASP.NET Core MVC** and **.NET 6**, simulating a simple book loan management system.
 
-## 🔧 Tecnologias Utilizadas
+## 🔧 Technologies Used
 
 - ASP.NET Core MVC  
 - .NET 6  
 - Entity Framework Core  
 - Razor Views  
 
-## 🧩 Funcionalidades
+## 🧩 Features
 
-- 📖 Cadastrar novo empréstimo de livro  
-- ✏️ Editar empréstimo existente  
-- ❌ Excluir empréstimo  
-- 🔍 Buscar empréstimos por nome do livro ou outras informações
+- 📖 Register a new book loan  
+- ✏️ Edit an existing loan  
+- ❌ Delete a loan  
+- 🔍 Search for loans by book name or other information
 
-## 📌 Observações
+## 📌 Notes
 
-- Este projeto é voltado para fins de aprendizado com ASP.NET Core MVC.
-- Futuras melhorias podem incluir autenticação, histórico de empréstimos, entre outras.
+- This project was created for learning purposes using ASP.NET Core MVC.
+- Future improvements may include authentication, loan history, and more.
