@@ -11,5 +11,5 @@ public class ApplicationDbContext : DbContext
         
     }
 
-    public DbSet<LoanModel> Loan { get; set; }
+    public DbSet<LoanModel> Loan { get; set; } = null!;
 }
