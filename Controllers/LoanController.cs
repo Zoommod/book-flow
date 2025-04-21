@@ -11,10 +11,35 @@ namespace BookFlow.Controllers
         public LoanController(ApplicationDbContext db){
             _db = db;
         }
-    
-        public IActionResult Index(){
-            IEnumerable<LoanModel> loan = _db.Loan;
-            return View(loan);
+
+        [HttpGet("emprestimo")]
+        public IActionResult Index()
+        {
+            var viewModel = new LoanViewModel
+            {
+                Loans = _db.Loan.OrderByDescending(x => x.LastUpdatedDate)
+            };
+            return View(viewModel);
         }
+
+
+        [HttpPost]
+        public IActionResult Create(LoanViewModel viewModel)
+        {
+            if(ModelState.IsValid){
+                var loan = viewModel.NewLoan;
+                loan.LastUpdatedDate = DateTime.Now;
+                _db.Loan.Add(loan);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View("Index", new LoanViewModel {
+                NewLoan = viewModel.NewLoan,
+                Loans = _db.Loan.OrderByDescending(x => x.LastUpdatedDate).ToList()           
+            });    
+            
+        }
+
     }
 }

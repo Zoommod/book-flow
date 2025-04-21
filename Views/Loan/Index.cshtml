@@ -1,4 +1,12 @@
-﻿@model IEnumerable<LoanModel>
+﻿@model LoanViewModel
+
+
+<div class="container">
+
+  <div class="d-flex justify-content-between align-items-center mb-5">
+    <h1>Empréstimos</h1>
+    <button class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#addLoanModal">Cadastrar novo empréstimo</button>
+  </div>
 
 <table class="table table-hover">
     <thead>
@@ -10,15 +18,63 @@
     </tr>
   </thead>
   <tbody>
-    @if(Model != null){
-        @foreach(var loan in Model){
+    @if(Model.Loans != null){
+        @foreach(var loan in Model.Loans){
             <tr>
                 <th scope="row">@loan.Borrower</th>
                 <td>@loan.Supplier</td>
                 <td>@loan.BorrowedBook</td>
-                <td>@loan.LastUpdatedDate</td>
+                <td>@loan.LastUpdatedDate.ToString("dd/MM/yyyy HH:mm")</td>
             </tr>
         }
     }
   </tbody>
 </table>
+</div>
+
+<div class="modal fade" id="addLoanModal" tabindex="-1" aria-labelledby="addLoanLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form asp-action="Create" method="post">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addLoanLabel">Cadastrar Empréstimo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label asp-for="NewLoan.Borrower" class="form-label">Solicitante</label>
+            <input asp-for="NewLoan.Borrower" class="form-control">
+            <span asp-validation-for="NewLoan.Borrower" class="text-danger"></span>
+          </div>
+          <div class="mb-3">
+            <label asp-for="NewLoan.Supplier" class="form-label">Fornecedor</label>
+            <input asp-for="NewLoan.Supplier" class="form-control">
+            <span asp-validation-for="NewLoan.Supplier" class="text-danger"></span>
+          </div>
+          <div class="mb-3">
+            <label asp-for="NewLoan.BorrowedBook" class="form-label">Livro Emprestado</label>
+            <input asp-for="NewLoan.BorrowedBook" class="form-control">
+            <span asp-validation-for="NewLoan.BorrowedBook" class="text-danger"></span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Salvar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Verifica se há erros de validação no ModelState
+        $(document).ready(function () {
+            var hasValidationErrors = $('span.field-validation-error').length > 0;
+            if (hasValidationErrors) {
+                var modal = new bootstrap.Modal(document.getElementById('addLoanModal'));
+                modal.show();
+            }
+        });
+    </script>
+}
