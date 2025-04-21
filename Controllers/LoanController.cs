@@ -41,5 +41,49 @@ namespace BookFlow.Controllers
             
         }
 
+        [HttpPost]
+        public IActionResult Edit(LoanModel loan)
+        {
+            if (ModelState.IsValid)
+            {
+                var existingLoan = _db.Loan.FirstOrDefault(l => l.Id == loan.Id);
+
+                if (existingLoan != null)
+                {
+                    existingLoan.Borrower = loan.Borrower;
+                    existingLoan.Supplier = loan.Supplier;
+                    existingLoan.BorrowedBook = loan.BorrowedBook;
+                    existingLoan.LastUpdatedDate = DateTime.Now;
+
+                    _db.SaveChanges();
+                }
+
+                return RedirectToAction("Index");
+            }
+
+            var viewModel = new LoanViewModel
+            {
+                Loans = _db.Loan.OrderByDescending(x => x.LastUpdatedDate).ToList(),
+                NewLoan = new LoanModel()
+            };
+
+            return View("Index", viewModel);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            var loan = _db.Loan.FirstOrDefault(l => l.Id == id);
+
+            if (loan != null)
+            {
+                _db.Loan.Remove(loan);
+                _db.SaveChanges();
+            }
+
+            return RedirectToAction("Index");
+        }
+
+
     }
 }

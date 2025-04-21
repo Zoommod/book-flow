@@ -15,6 +15,7 @@
       <th scope="col">Fornecedor</th>
       <th scope="col">Livro Emprestado</th>
       <th scope="col">Última Atualização</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -25,7 +26,71 @@
                 <td>@loan.Supplier</td>
                 <td>@loan.BorrowedBook</td>
                 <td>@loan.LastUpdatedDate.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>
+                  <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editLoanModal-@loan.Id">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+
+                  <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteLoanModal-@loan.Id">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </td>
             </tr>
+
+            <!-- Modal de Edição -->
+            <div class="modal fade" id="editLoanModal-@loan.Id" tabindex="-1" aria-labelledby="editLoanLabel-@loan.Id" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form asp-action="Edit" method="post">
+                    <input type="hidden" name="Id" value="@loan.Id" />
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="editLoanLabel-@loan.Id">Editar Empréstimo</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label class="form-label">Solicitante</label>
+                        <input type="text" name="Borrower" class="form-control" value="@loan.Borrower" required>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Fornecedor</label>
+                        <input type="text" name="Supplier" class="form-control" value="@loan.Supplier" required>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Livro Emprestado</label>
+                        <input type="text" name="BorrowedBook" class="form-control" value="@loan.BorrowedBook" required>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-primary">Salvar alterações</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+                    <!-- Modal de Exclusão -->
+            <div class="modal fade" id="deleteLoanModal-@loan.Id" tabindex="-1" aria-labelledby="deleteLoanLabel-@loan.Id" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form asp-action="Delete" method="post">
+                    <input type="hidden" name="Id" value="@loan.Id" />
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="deleteLoanLabel-@loan.Id">Excluir Empréstimo</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                      Tem certeza que deseja excluir o empréstimo de <strong>@loan.Borrower</strong>?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-danger">Excluir</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
         }
     }
   </tbody>
