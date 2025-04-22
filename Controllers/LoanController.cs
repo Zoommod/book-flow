@@ -13,14 +13,37 @@ namespace BookFlow.Controllers
         }
 
         [HttpGet("emprestimo")]
-        public IActionResult Index()
+        public IActionResult Index(string sortOrder)
         {
+            ViewData["BorrowerSortParam"] = sortOrder == "borrower" ? "borrower_desc" : "borrower";
+            ViewData["SupplierSortParam"] = sortOrder == "supplier" ? "supplier_desc" : "supplier";
+            ViewData["BookSortParam"] = sortOrder == "book" ? "book_desc" : "book";
+            ViewData["DateSortParam"] = sortOrder == "date" ? "date_desc" : "date";
+
+            var loans = from l in _db.Loan
+                        select l;
+
+            loans = sortOrder switch
+            {
+                "borrower" => loans.OrderBy(l => l.Borrower),
+                "borrower_desc" => loans.OrderByDescending(l => l.Borrower),
+                "supplier" => loans.OrderBy(l => l.Supplier),
+                "supplier_desc" => loans.OrderByDescending(l => l.Supplier),
+                "book" => loans.OrderBy(l => l.BorrowedBook),
+                "book_desc" => loans.OrderByDescending(l => l.BorrowedBook),
+                "date" => loans.OrderBy(l => l.LastUpdatedDate),
+                "date_desc" => loans.OrderByDescending(l => l.LastUpdatedDate),
+                _ => loans.OrderByDescending(l => l.LastUpdatedDate),
+            };
+
             var viewModel = new LoanViewModel
             {
-                Loans = _db.Loan.OrderByDescending(x => x.LastUpdatedDate)
+                Loans = loans.ToList()
             };
+
             return View(viewModel);
         }
+
 
 
         [HttpPost]
