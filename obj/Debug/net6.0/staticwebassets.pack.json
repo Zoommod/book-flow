@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets/BookFlow.pbnfbq3w79.bundle.scp.css"
     },
     {
+      "Id": "/home/Zoom/Documents/BookFlow/wwwroot/css/Darkly.css",
+      "PackagePath": "staticwebassets/css/Darkly.css"
+    },
+    {
+      "Id": "/home/Zoom/Documents/BookFlow/wwwroot/css/lux.css",
+      "PackagePath": "staticwebassets/css/lux.css"
+    },
+    {
       "Id": "/home/Zoom/Documents/BookFlow/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
       "Id": "/home/Zoom/Documents/BookFlow/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/home/Zoom/Documents/BookFlow/wwwroot/img/book.png",
+      "PackagePath": "staticwebassets/img/book.png"
     },
     {
       "Id": "/home/Zoom/Documents/BookFlow/wwwroot/js/site.js",

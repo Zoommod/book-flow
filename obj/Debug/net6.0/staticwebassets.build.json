@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YkdHwraalvqaXNFASC26drC+r+skzkOTTciAbRLFxDE=",
+  "Hash": "M3S1AGgHBAVTsWDcgbKGkc8o74JD4mSf1GGA+sWc6qk=",
   "Source": "BookFlow",
   "BasePath": "_content/BookFlow",
   "Mode": "Default",
@@ -59,6 +59,48 @@
       "OriginalItemSpec": "/home/Zoom/Documents/BookFlow/obj/Debug/net6.0/scopedcss/projectbundle/BookFlow.bundle.scp.css"
     },
     {
+      "Identity": "/home/Zoom/Documents/BookFlow/wwwroot/css/Darkly.css",
+      "SourceId": "BookFlow",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/Zoom/Documents/BookFlow/wwwroot/",
+      "BasePath": "_content/BookFlow",
+      "RelativePath": "css/Darkly#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vo2cgafiwc",
+      "Integrity": "n4DPECByP+k8wt0+S2bdKYU5kPPWtWTLUvhNFw2iuXg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/Darkly.css"
+    },
+    {
+      "Identity": "/home/Zoom/Documents/BookFlow/wwwroot/css/lux.css",
+      "SourceId": "BookFlow",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/Zoom/Documents/BookFlow/wwwroot/",
+      "BasePath": "_content/BookFlow",
+      "RelativePath": "css/lux#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ppcxn84fxq",
+      "Integrity": "nVXVSzJv6h159KlYh2aSzEXCuEc9ulbTPCgT45Jd9Xc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/lux.css"
+    },
+    {
       "Identity": "/home/Zoom/Documents/BookFlow/wwwroot/css/site.css",
       "SourceId": "BookFlow",
       "SourceType": "Discovered",
@@ -101,6 +143,27 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
+      "Identity": "/home/Zoom/Documents/BookFlow/wwwroot/img/book.png",
+      "SourceId": "BookFlow",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/Zoom/Documents/BookFlow/wwwroot/",
+      "BasePath": "_content/BookFlow",
+      "RelativePath": "img/book#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ujexlynpk",
+      "Integrity": "7HBI14VbLhYlxs5WN9IwmnWOnZXq+sUil/TzV4L+FE8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/book.png"
+    },
+    {
       "Identity": "/home/Zoom/Documents/BookFlow/wwwroot/js/site.js",
       "SourceId": "BookFlow",
       "SourceType": "Discovered",
@@ -115,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bnkqy1y0r8",
-      "Integrity": "BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY=",
+      "Fingerprint": "68m08faby5",
+      "Integrity": "hnS2iBrfrWYJeySz4tv0RP0Ch9V8HWWNFqe1JAK8SSc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
@@ -1485,6 +1548,170 @@
       ]
     },
     {
+      "Route": "css/Darkly.css",
+      "AssetFile": "/home/Zoom/Documents/BookFlow/wwwroot/css/Darkly.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "280438"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n4DPECByP+k8wt0+S2bdKYU5kPPWtWTLUvhNFw2iuXg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 12:58:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n4DPECByP+k8wt0+S2bdKYU5kPPWtWTLUvhNFw2iuXg="
+        }
+      ]
+    },
+    {
+      "Route": "css/Darkly.vo2cgafiwc.css",
+      "AssetFile": "/home/Zoom/Documents/BookFlow/wwwroot/css/Darkly.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "280438"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n4DPECByP+k8wt0+S2bdKYU5kPPWtWTLUvhNFw2iuXg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 12:58:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vo2cgafiwc"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Darkly.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-n4DPECByP+k8wt0+S2bdKYU5kPPWtWTLUvhNFw2iuXg="
+        }
+      ]
+    },
+    {
+      "Route": "css/lux.css",
+      "AssetFile": "/home/Zoom/Documents/BookFlow/wwwroot/css/lux.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nVXVSzJv6h159KlYh2aSzEXCuEc9ulbTPCgT45Jd9Xc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 20:49:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nVXVSzJv6h159KlYh2aSzEXCuEc9ulbTPCgT45Jd9Xc="
+        }
+      ]
+    },
+    {
+      "Route": "css/lux.ppcxn84fxq.css",
+      "AssetFile": "/home/Zoom/Documents/BookFlow/wwwroot/css/lux.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nVXVSzJv6h159KlYh2aSzEXCuEc9ulbTPCgT45Jd9Xc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 20:49:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ppcxn84fxq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/lux.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nVXVSzJv6h159KlYh2aSzEXCuEc9ulbTPCgT45Jd9Xc="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "/home/Zoom/Documents/BookFlow/wwwroot/css/site.css",
       "Selectors": [],
@@ -1649,8 +1876,8 @@
       ]
     },
     {
-      "Route": "js/site.bnkqy1y0r8.js",
-      "AssetFile": "/home/Zoom/Documents/BookFlow/wwwroot/js/site.js",
+      "Route": "img/book.4ujexlynpk.png",
+      "AssetFile": "/home/Zoom/Documents/BookFlow/wwwroot/img/book.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1659,19 +1886,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "226"
+          "Value": "247168"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/javascript"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY=\""
+          "Value": "\"7HBI14VbLhYlxs5WN9IwmnWOnZXq+sUil/TzV4L+FE8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 18:53:23 GMT"
+          "Value": "Tue, 22 Apr 2025 18:01:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1681,7 +1908,89 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bnkqy1y0r8"
+          "Value": "4ujexlynpk"
+        },
+        {
+          "Name": "label",
+          "Value": "img/book.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7HBI14VbLhYlxs5WN9IwmnWOnZXq+sUil/TzV4L+FE8="
+        }
+      ]
+    },
+    {
+      "Route": "img/book.png",
+      "AssetFile": "/home/Zoom/Documents/BookFlow/wwwroot/img/book.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "247168"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7HBI14VbLhYlxs5WN9IwmnWOnZXq+sUil/TzV4L+FE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 18:01:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7HBI14VbLhYlxs5WN9IwmnWOnZXq+sUil/TzV4L+FE8="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.68m08faby5.js",
+      "AssetFile": "/home/Zoom/Documents/BookFlow/wwwroot/js/site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hnS2iBrfrWYJeySz4tv0RP0Ch9V8HWWNFqe1JAK8SSc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 01:06:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "68m08faby5"
         },
         {
           "Name": "label",
@@ -1689,7 +1998,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY="
+          "Value": "sha256-hnS2iBrfrWYJeySz4tv0RP0Ch9V8HWWNFqe1JAK8SSc="
         }
       ]
     },
@@ -1704,7 +2013,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "226"
+          "Value": "487"
         },
         {
           "Name": "Content-Type",
@@ -1712,11 +2021,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY=\""
+          "Value": "\"hnS2iBrfrWYJeySz4tv0RP0Ch9V8HWWNFqe1JAK8SSc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 18:53:23 GMT"
+          "Value": "Wed, 23 Apr 2025 01:06:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1726,7 +2035,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY="
+          "Value": "sha256-hnS2iBrfrWYJeySz4tv0RP0Ch9V8HWWNFqe1JAK8SSc="
         }
       ]
     },

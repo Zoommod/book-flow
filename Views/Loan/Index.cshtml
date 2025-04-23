@@ -10,18 +10,18 @@
 
 <div class="container">
 
-  <div class="d-flex justify-content-between align-items-center mb-5">
+  <div class="d-flex justify-content-between align-items-center mb-5 mt-5">
     <h1>Empréstimos</h1>
     <button class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#addLoanModal">Cadastrar novo empréstimo</button>
   </div>
 
-<table class="table table-hover">
+<table id="loanTable" class="table table-hover">
     <thead>
     <tr>
-      <th><a class="text-dark text-decoration-none" asp-action="Index" asp-route-sortOrder="@ViewData["BorrowerSortParam"]">Solicitante @Html.Raw(GetSortIcon("borrower"))</a></th>
-      <th><a class="text-dark text-decoration-none" asp-action="Index" asp-route-sortOrder="@ViewData["SupplierSortParam"]">Fornecedor @Html.Raw(GetSortIcon("supplier"))</a></th>
-      <th><a class="text-dark text-decoration-none" asp-action="Index" asp-route-sortOrder="@ViewData["BookSortParam"]">Livro Emprestado @Html.Raw(GetSortIcon("book"))</a></th>
-      <th><a class="text-dark text-decoration-none" asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParam"]">Última Atualização @Html.Raw(GetSortIcon("date"))</a></th>
+      <th>Solicitante</th>
+      <th>Fornecedor</th>
+      <th>Livro Emprestado</th>
+      <th>Última Atualização</th>
       <th></th>
     </tr>
   </thead>
@@ -35,11 +35,11 @@
                 <td>@loan.LastUpdatedDate.ToString("dd/MM/yyyy HH:mm")</td>
                 <td>
                   <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editLoanModal-@loan.Id">
-                    <i class="bi bi-pencil"></i>
+                    <i class="bi bi-pencil-square"></i>
                   </button>
 
                   <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteLoanModal-@loan.Id">
-                    <i class="bi bi-trash"></i>
+                    <i class="bi bi-trash3-fill"></i>
                   </button>
                 </td>
             </tr>
@@ -139,14 +139,9 @@
 </div>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
-    <script>
-        // Verifica se há erros de validação no ModelState
-        $(document).ready(function () {
-            var hasValidationErrors = $('span.field-validation-error').length > 0;
-            if (hasValidationErrors) {
-                var modal = new bootstrap.Modal(document.getElementById('addLoanModal'));
-                modal.show();
-            }
-        });
+    <script src="https://cdn.datatables.net/v/dt/dt-2.2.2/datatables.min.js"
+            integrity="sha384-2Ul6oqy3mEjM7dBJzKOck1Qb/mzlO+k/0BQv3D3C7u+Ri9+7OBINGa24AeOv5rgu"
+            crossorigin="anonymous">
     </script>
+    <script src="~/js/loan.js"></script>
 }

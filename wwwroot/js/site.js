@@ -1,4 +1,15 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿$(document).ready(function () {
+    // Inicializa o DataTables
+    $('#loanTable').DataTable({
+        language: {
+            url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/pt-BR.json'
+        }
+    });
 
-// Write your JavaScript code.
+    // Verifica se há erros de validação no ModelState
+    var hasValidationErrors = $('span.field-validation-error').length > 0;
+    if (hasValidationErrors) {
+        var modal = new bootstrap.Modal(document.getElementById('addLoanModal'));
+        modal.show();
+    }
+});
