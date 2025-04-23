@@ -12,4 +12,15 @@
         var modal = new bootstrap.Modal(document.getElementById('addLoanModal'));
         modal.show();
     }
+
+    // Animação de fade para a mensagem de sucesso
+    const mensagem = document.getElementById("mensagem-aviso");
+    if (mensagem) {
+        setTimeout(() => {
+            mensagem.classList.add("fade-out");
+            setTimeout(() => {
+                mensagem.remove();
+            }, 500); // Espera a transição terminar antes de remover do DOM
+        }, 3000);
+    }
 });

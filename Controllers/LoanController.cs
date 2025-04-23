@@ -32,8 +32,11 @@ namespace BookFlow.Controllers
                 loan.LastUpdatedDate = DateTime.Now;
                 _db.Loan.Add(loan);
                 _db.SaveChanges();
+                TempData["MensagemSucesso"] = "Cadastro realizado com sucesso!";
                 return RedirectToAction("Index");
             }
+
+            TempData["MensagemErro"] = "Houve um erro ao realizar o cadastro!";
 
             return View("Index", new LoanViewModel {
                 NewLoan = viewModel.NewLoan,
@@ -57,7 +60,9 @@ namespace BookFlow.Controllers
                     existingLoan.LastUpdatedDate = DateTime.Now;
 
                     _db.SaveChanges();
+                    TempData["MensagemSucesso"] = "Edição realizada com sucesso!";
                 }
+                TempData["MensagemErro"] = "Houve um erro ao realizar a edição!";
 
                 return RedirectToAction("Index");
             }
@@ -80,7 +85,9 @@ namespace BookFlow.Controllers
             {
                 _db.Loan.Remove(loan);
                 _db.SaveChanges();
+                TempData["MensagemSucesso"] = "Remoção realizada com sucesso!";
             }
+            TempData["MensagemErro"] = "Houve um erro ao realizar a remoção!";
 
             return RedirectToAction("Index");
         }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M3S1AGgHBAVTsWDcgbKGkc8o74JD4mSf1GGA+sWc6qk=",
+  "Hash": "uteJKoRy4Zb2mkT0RPb9PHdleZyEoKieco2MjhF8fUQ=",
   "Source": "BookFlow",
   "BasePath": "_content/BookFlow",
   "Mode": "Default",
@@ -57,27 +57,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/Zoom/Documents/BookFlow/obj/Debug/net6.0/scopedcss/projectbundle/BookFlow.bundle.scp.css"
-    },
-    {
-      "Identity": "/home/Zoom/Documents/BookFlow/wwwroot/css/Darkly.css",
-      "SourceId": "BookFlow",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/Zoom/Documents/BookFlow/wwwroot/",
-      "BasePath": "_content/BookFlow",
-      "RelativePath": "css/Darkly#[.{fingerprint}]?.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "vo2cgafiwc",
-      "Integrity": "n4DPECByP+k8wt0+S2bdKYU5kPPWtWTLUvhNFw2iuXg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/Darkly.css"
     },
     {
       "Identity": "/home/Zoom/Documents/BookFlow/wwwroot/css/lux.css",
@@ -1544,88 +1523,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-1ebJnyO2GhQk4izB7ZUYbBX1S8NYcvg+gYTA08SnJqQ="
-        }
-      ]
-    },
-    {
-      "Route": "css/Darkly.css",
-      "AssetFile": "/home/Zoom/Documents/BookFlow/wwwroot/css/Darkly.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "280438"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"n4DPECByP+k8wt0+S2bdKYU5kPPWtWTLUvhNFw2iuXg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 12:58:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-n4DPECByP+k8wt0+S2bdKYU5kPPWtWTLUvhNFw2iuXg="
-        }
-      ]
-    },
-    {
-      "Route": "css/Darkly.vo2cgafiwc.css",
-      "AssetFile": "/home/Zoom/Documents/BookFlow/wwwroot/css/Darkly.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "280438"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"n4DPECByP+k8wt0+S2bdKYU5kPPWtWTLUvhNFw2iuXg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 12:58:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vo2cgafiwc"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Darkly.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-n4DPECByP+k8wt0+S2bdKYU5kPPWtWTLUvhNFw2iuXg="
         }
       ]
     },

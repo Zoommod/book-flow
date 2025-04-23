@@ -16,3 +16,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+#mensagem-aviso.fade-out {
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+}

@@ -15,6 +15,17 @@
     <button class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#addLoanModal">Cadastrar novo empréstimo</button>
   </div>
 
+  @if(TempData["MensagemSucesso"] != null){
+    <div id="mensagem-aviso" class="alert alert-success text-dark" role="alert">
+      @TempData["MensagemSucesso"]
+    </div>
+  }
+
+    @if(TempData["MensagemErro"] != null){
+    <div id="mensagem-aviso" class="alert alert-danger text-dark" role="alert">
+      @TempData["MensagemErro"]
+    </div>
+  }
 <table id="loanTable" class="table table-hover">
     <thead>
     <tr>
