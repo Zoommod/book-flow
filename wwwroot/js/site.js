@@ -4,7 +4,10 @@
         language: {
             url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/pt-BR.json'
         },
-        order: [[3, 'desc']]
+        order: [[3, 'desc']],
+        paging: true,  // Habilita a paginação
+        fixedHeader: true,  // Fixa o cabeçalho da tabela
+        stateSave: true  // Salva o estado da tabela
     });
 
     // Verifica se há erros de validação no ModelState

@@ -1,5 +1,6 @@
-html {
-  font-size: 14px;
+html, body {
+  height: 100%;
+  margin: 0px;
 }
 
 @media (min-width: 768px) {
@@ -8,16 +9,21 @@ html {
   }
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-}
-
 #mensagem-aviso.fade-out {
   transition: opacity 0.5s ease-out;
   opacity: 0;
+}
+
+.container {
+  min-height: calc(100vh - 60px);  /* 60px é a altura do footer */
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;  /* Empurra o footer para o final da página */
 }

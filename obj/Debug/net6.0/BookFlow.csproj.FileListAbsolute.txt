@@ -70,3 +70,11 @@
 /home/Zoom/Documents/BookFlow/obj/Debug/net6.0/BookFlow.pdb
 /home/Zoom/Documents/BookFlow/obj/Debug/net6.0/BookFlow.genruntimeconfig.cache
 /home/Zoom/Documents/BookFlow/obj/Debug/net6.0/ref/BookFlow.dll
+/home/Zoom/Documents/BookFlow/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/Zoom/Documents/BookFlow/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/Zoom/Documents/BookFlow/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/Zoom/Documents/BookFlow/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.UI.dll
+/home/Zoom/Documents/BookFlow/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/home/Zoom/Documents/BookFlow/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/home/Zoom/Documents/BookFlow/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/home/Zoom/Documents/BookFlow/obj/Debug/net6.0/BookFlow.MvcApplicationPartsAssemblyInfo.cs
