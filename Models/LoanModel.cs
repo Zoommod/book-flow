@@ -14,4 +14,6 @@ public class LoanModel
     [Required(ErrorMessage = "O campo Livro Emprestado é obrigatório.")]
     public string BorrowedBook { get; set; } = string.Empty;
     public DateTime LastUpdatedDate { get; set; } = DateTime.Now;
+    public string ApplicationUserId { get; set; }
+    public ApplicationUser ApplicationUser { get; set; }
 }
